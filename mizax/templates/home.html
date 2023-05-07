@@ -6,7 +6,9 @@
 </head>
 <body>
 
-<h3>Home page</h3>
+   {% for all in all %}
+        <h3>{{all.name}}</h3>
+   {% endfor %}
 
 </body>
 </html>
