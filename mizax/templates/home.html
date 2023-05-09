@@ -5,7 +5,8 @@
 
 {% block content %}
    {% for all in all %}
-        <a href ="/detail/{{all.id}}">{{all.name}}</a><h4>{{all.ticket_price}}</h4>
+        <a href ="{% url 'detail' all.id %}">{{all.name}}</a><h4>{{all.ticket_price}}</h4>
+
 <!--        <small>{{all.opentime}}</small>-->
 <!--        <p>{{all.city}}</p>-->
    {% endfor %}
