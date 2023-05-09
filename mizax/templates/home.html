@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
+{%extends 'base.html'%}
 
+{% block Title %} Home {% endblock %}
+
+
+{% block content %}
    {% for all in all %}
         <h3>{{all.name}}</h3><h4>{{all.ticket_price}}</h4>
         <small>{{all.opentime}}</small>
         <p>{{all.city}}</p>
-
-
    {% endfor %}
 
-</body>
-</html>
+{% endblock %}
