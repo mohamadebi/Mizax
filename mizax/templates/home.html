@@ -7,7 +7,11 @@
 <body>
 
    {% for all in all %}
-        <h3>{{all.name}}</h3>
+        <h3>{{all.name}}</h3><h4>{{all.ticket_price}}</h4>
+        <small>{{all.opentime}}</small>
+        <p>{{all.city}}</p>
+
+
    {% endfor %}
 
 </body>
