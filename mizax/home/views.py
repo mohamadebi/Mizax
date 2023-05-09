@@ -8,3 +8,6 @@ def home(request):
 def say_hello(request):
     return render(request,'hello.html')
 # Create your views here.
+def detail(requset,place_id):
+     all = Place.objects.get(id=place_id)
+     return  render(requset,'detail.html',{'place':all})
