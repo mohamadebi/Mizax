@@ -4,6 +4,7 @@
 
 
 {% block content %}
+<<<<<<< HEAD
 
 
     <div class="card">
@@ -16,5 +17,14 @@
     </div>
 
 
+=======
+    <div class="card">
+       {% for all in all %}
+<!--            <a href ="{% url 'detail' all.id %}">{{all.name}}</a><h4>{{all.ticket_price}}</h4>-->
+            <a class="card-body" href="{%url 'detail' all.id %}"> {{all.name}}</a><br>
 
+>>>>>>> 7c5bfe07be0ef3b0633d8a9e196b13d4abd659be
+
+       {% endfor %}
+    </div>
 {% endblock %}
