@@ -2,17 +2,11 @@
 
 
 {%block content%}
-<<<<<<< HEAD
-  <a href=""class= "btn btn-danger">Delete </a>
-=======
+<!--  <a href=""class= "btn btn-danger">Delete </a>-->
   <a href="{% url 'delete' place.id%}" class="btn btn-danger">delete</a>
-<<<<<<< HEAD
->>>>>>> 7c5bfe07be0ef3b0633d8a9e196b13d4abd659be
-=======
   <a href="{% url 'update' place.id%}" class="btn btn-info">update</a>
->>>>>>> 1be7fbe ( update_delete)
+
   <h3>{{place.name}}</h3>
-<!--  <small>{{place.city}}</small>-->
   <small>{{place.opentime}}</small>
   <small>{{place.price}}</small>
 
