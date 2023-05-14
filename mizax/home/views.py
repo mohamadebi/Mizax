@@ -21,10 +21,15 @@ def delete(requset, place_id):
     return redirect('home')
 
 def update(requset, place_id):
+    info = Place.objects.get(id=place_id)
     if requset.method == 'POST':
-        pass
+        form = PlaceUpdateForm(requset.POST,instance=info)
+        if form.is_valid():
+            form.save()
+            messages.success(requset,'your info updated successfully','success')
+            return redirect('detail',place_id)
     else:
-        form = PlaceUpdateForm()
+        form = PlaceUpdateForm(instance=info)
     # messages.success(requset,'Record update successfully',extra_tags="success")
 
     return render(requset,'update.html',{'form':form})
