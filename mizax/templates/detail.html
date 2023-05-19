@@ -14,4 +14,17 @@
   <p style="color : green"> {{place.name}} </p>
   <p style = "color : red"> <del>CLOSE</del> </p>
   <p style="color : green"> <b>OPEN</b></p>
+  <table>
+    <tr>
+      <th> NAME </th>
+      <th> time </th>
+      <th> price </th>
+    </tr>
+    <tr>
+      <td>{{place.name}}</td>
+      <td>{{place.opentime}}</td>
+      <td>{{place.price}}</td>
+    </tr>
+
+  </table>
 {% endblock %}
