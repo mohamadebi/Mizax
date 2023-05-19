@@ -6,7 +6,7 @@
 {% block content %}
 
     {% if request.user.is_authenticated %}
-    <a href="{%url 'user_logout' %}">Logout</a>
+    <a href="{%url 'user_logout' %}"style="color">Logout</a>
 
     {%else%}
     <a href="{%url 'user_register' %}">Register</a>

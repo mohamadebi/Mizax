@@ -5,9 +5,13 @@
 <!--  <a href=""class= "btn btn-danger">Delete </a>-->
   <a href="{% url 'delete' place.id%}" class="btn btn-danger">delete</a>
   <a href="{% url 'update' place.id%}" class="btn btn-info">update</a>
-
-  <h3>{{place.name}}</h3>
-  <small>{{place.opentime}}</small>
-  <small>{{place.price}}</small>
-
+  <br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Persia-Tomb-of-Cyrus-the-Great-Passargad-530BC.JPG" style="width:400px ; height:410"  >
+  <br>
+  <h1>{{place.name}}</h1>
+  <h5>{{place.opentime}}</h5>
+  <h5>{{place.price}}</h5>
+  <p style="color : green"> {{place.name}} </p>
+  <p style = "color : red"> <del>CLOSE</del> </p>
+  <p style="color : green"> <b>OPEN</b></p>
 {% endblock %}
