@@ -3,35 +3,56 @@
 
 {%block content%}
 <!--  <a href=""class= "btn btn-danger">Delete </a>-->
-  <a href="{% url 'delete' place.id%}" class="btn btn-danger">delete</a>
-  <a href="{% url 'update' place.id%}" class="btn btn-info">update</a>
-  <br>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Persia-Tomb-of-Cyrus-the-Great-Passargad-530BC.JPG" style="width:400px ; height:410"  >
-  <br>
-  <h1>{{place.name}}</h1>
-  <h5>{{place.opentime}}</h5>
-  <h5>{{place.price}}</h5>
-  <p style="color : green"> {{place.name}} </p>
-  <p style = "color : red"> <del>CLOSE</del> </p>
-  <p style="color : green"> <b>OPEN</b></p>
-  <table style="font-family:tahoma">
-    <tr>
-      <th> NAME </th>
-      <th> time </th>
-      <th> price </th>
-    </tr>
-    <tr>
-      <td>{{place.name}}</td>
-      <td>{{place.opentime}}</td>
-      <td>{{place.price}}</td>
-    </tr>
-    <ol>
-      <li>item1</li>
-      <li>item2</li>
-      <li>item3</li>
-      <li>item4</li>
-    </ol>
-  </table>
+<a href="{% url 'delete' place.id%}" class="btn btn-danger">delete</a>
+<a href="{% url 'update' place.id%}" class="btn btn-info">update</a>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Persia-Tomb-of-Cyrus-the-Great-Passargad-530BC.JPG"
+  style="width:400px ; height:410">
+<br>
+<h1>{{place.name}}</h1>
+<h5>{{place.opentime}}</h5>
+<h5>{{place.price}}</h5>
+<p style="color : green"> {{place.name}} </p>
+<p style="color : rgba(255, 0, 0, 0.582)"> <del>CLOSE</del> </p>
+<p style="color : green"> <b>OPEN</b></p>
+<table style="font-family:tahoma">
+  <tr>
+    <th> NAME </th>
+    <th> time </th>
+    <th> price </th>
+  </tr>
+  <tr>
+    <td>{{place.name}}</td>
+    <td>{{place.opentime}}</td>
+    <td>{{place.price}}</td>
+  </tr>
+  <ol>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+  </ol>
+</table>
+<label for="selectbox">selectbox</label>
+<br>
+<select name="select-box" id="selectbox" size="5">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="java">JAVA</option>
+  <option value="python">Python</option>
+  <option value="go">GO</option>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="java">JAVA</option>
+  <option value="python">Python</option>
+  <option value="go">GO</option>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="java" selected>JAVA</option>
+  <option value="python">Python</option>
+  <option value="go">GO</option>
+
+</select>
 <a style="">
 </a>
 {% endblock %}
