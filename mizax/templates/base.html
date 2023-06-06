@@ -22,10 +22,6 @@
 
     }
 
-    .last {
-      color: aquamarine;
-    }
-
     th {
       text-align: center;
     }
@@ -50,10 +46,33 @@
     {% block content %} {% endblock %}
   </div>
   <h3>سایت گردشگری</h3>
-  <p>این متن تست است</p>
-  <p class="last">این متن تست است</p>
-  <p>این متن تست است</p>
-  <p class="last">این متن تست است</p>
+  <h3>سایت گردشگری</h3>
+  <form action="">
+
+    <h3>User info</h3>
+    <label for="name"> NAME: </label>
+    <input type="text" id="phone" , name="name">
+    <br>
+    <h3>Gender</h3>
+    <label for="male">male</label>
+    <input type="radio" value="male" , name="gender">
+    <br>
+    <label for="female">female</label>
+    <input type="radio" value="female" , name="gender">
+    <br>
+    <h3>skill</h3>
+    <label for="python">python</label>
+    <input type="checkbox" , name="python">
+    <br>
+    <label for="network">network</label>
+    <input type="checkbox" , name="network">
+    <br>
+    <label for="managment">managment</label>
+    <input type="checkbox" , name="managment">
+    <br>
+    <input type="submit" , name="submit" , value="save">
+    <input type="reset" , name="reset">
+  </form>
 </body>
 
 </html>
