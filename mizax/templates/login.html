@@ -1,9 +1,129 @@
-{%extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
 
-{%block content%}
-    <form action="" method="POST" novalidate>
-        {%csrf_token%}
-        {{form.as_p}}
-        <input type="submit" value="Login">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+        font-family: Dana;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #00BB8C;
+    }
+
+    form {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 20px 28px;
+        width: 400px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        border: 1px solid #ded9ee;
+        padding: 16px;
+        border-radius: 8px;
+        color: #1b1b1b;
+        display: block;
+        transition: 180ms ease-in border-color;
+    }
+
+    input::placeholder {
+        color: grey;
+        font-weight: 300;
+    }
+
+    input:focus {
+        border-color: #89888b;
+    }
+
+    button[type="submit"],
+    input[type="submit"] {
+        background-color: #2ed573;
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 110px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+
+    <form action="">
+        <!-- {%csrf_token%} -->
+        <!-- {{form.as_p}} -->
+        <div>
+            <label for="image"></label>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiTcB8Sjcr698ecGPC8O1BT9b3gl5UVmMjTb3Mhm0Gx046pqCEQ9z41zcA79HpZUWxtXc&usqp=CAU"
+                alt="">
+        </div><br>
+        <div>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="نام مستعار" required autofocus>
+
+        </div><br>
+
+
+
+        <div>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="ایمیل" required>
+
+        </div><br>
+
+
+        <div>
+            <label for="password" id="password" name="password"></label>
+            <input type="password" placeholder="رمز عبور" maxlength="8" minlength="8" required>
+
+            <br>
+
+            <label for="password-retry" id="password-retry" name="password-retry"></label>
+            <input type="password" placeholder="تکرار رمز عبور" maxlength="8" minlength="8" required>
+        </div><br>
+
+
+        <div>
+
+            <input type="checkbox" id="accept" name="accept" required>
+            <label for="accept">شرایط و قوانین سایت <a href="#">سبزلرن</a> را میپذیرم</label>
+        </div><br>
+
+
+        <div>
+            <input type="submit" value="ثبت نام">
+        </div>
+
+
     </form>
-{% endblock %}
+
+
+
+</body>
+
+</html>
