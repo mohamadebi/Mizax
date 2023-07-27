@@ -9,6 +9,10 @@ from .forms import PlaceForm,PlaceUpdateForm
 def home(request):
     all = Place.objects.all()
     return render(request,'home.html',{'all':all})
+
+def home1(request):
+    all = Place.objects.all()
+    return render(request,'home.html',{'all':all})
 # Create your views here.
 def detail(requset,place_id):
      all = Place.objects.get(id=place_id)
