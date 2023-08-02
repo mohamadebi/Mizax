@@ -13,3 +13,8 @@ class PlaceUpdateForm(forms.ModelForm):
     class Meta:
         model = Place
         fields = ('name','city','ticket_price')
+
+class PlacedeleteForm(forms.ModelForm):
+    class Meta:
+        model = Place
+        fields = ('name','city','ticket_price')
