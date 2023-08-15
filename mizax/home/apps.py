@@ -12,7 +12,7 @@ class HomeConfig1(AppConfig):
     name1 = 'home'
 
 
-class HomeConfig22(AppConfig):
+class HomeConfig12(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'home'
     name2 = 'home'
