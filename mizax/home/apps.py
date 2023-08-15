@@ -15,3 +15,4 @@ class HomeConfig1(AppConfig):
 class HomeConfig2(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'home'
+    name2 = 'home'
